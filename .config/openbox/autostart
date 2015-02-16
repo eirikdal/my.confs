@@ -1,0 +1,22 @@
+
+# Launch Xcomppmgr and tint2 with openbox
+if which tint2 >/dev/null 2>&1; then
+  (sleep 2 && xcompmgr) &
+  (sleep 2 && conky) &
+  (sleep 2 && plex_media_server.sh) &
+  (sleep 1s && tint2 -c /usr/share/tint2/themes/dark_dock/tint2rc) &
+fi
+
+# Set wallpaper
+(sleep 1s && feh --bg-scale /usr/share/wallpapers/archbang.png)  &
+
+# Enable as required
+#xbacklight -set 100 &
+#/usr/bin/synclient TouchpadOff=1 &
+#xxkb &
+setxkbmap us &
+tint2 &
+
+(sleep 2 && spacefm -d) &
+(sleep 3 && nm-applet) &
+(sleep 3 && volumeicon) &
