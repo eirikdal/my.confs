@@ -1,0 +1,6 @@
+<keymap version="1" name="Default (Jan)" parent="$default">
+  <action id="QuickChangeScheme">
+    <keyboard-shortcut first-keystroke="control BACK_QUOTE" />
+    <keyboard-shortcut first-keystroke="control UNDEFINED" />
+  </action>
+</keymap>
