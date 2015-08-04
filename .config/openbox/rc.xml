@@ -239,7 +239,7 @@ cases. -->
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
-    <keybind key="A-F3">
+    <keybind key="S-F2">
       <action name="Execute">
         <command>~/.config/dmenu/dmenu-bind.sh</command>
         <startupnotify>
@@ -393,6 +393,9 @@ cases. -->
       <action name="Execute">
         <command>sudo pm-suspend</command>
       </action>
+    </keybind>
+    <keybind key="W-F11">
+      <action name="Reconfigure"/>
     </keybind>
   </keyboard>
   <mouse>
@@ -758,7 +761,7 @@ submenu will not be hidden until a different submenu is opened --&gt;
 </menu>
   <applications>
     <application class="*">
-      <decor>no</decor>
+      <decor>yes</decor>
       <position>
         <monitor>1</monitor>
       </position>
@@ -768,5 +771,6 @@ submenu will not be hidden until a different submenu is opened --&gt;
         <!-- Give back decorations to some app windows -->
     <application name="galculator"> <decor>yes</decor> </application>
     <application name="gcolor2"> <decor>yes</decor> </application>
+    <application name="intellij"> <decor>yes</decor> </application>
   </applications>
 </openbox_config>

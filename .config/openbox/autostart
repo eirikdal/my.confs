@@ -14,9 +14,9 @@ fi
 #xbacklight -set 100 &
 #/usr/bin/synclient TouchpadOff=1 &
 #xxkb &
-setxkbmap us &
-tint2 &
+setxkbmap -layout us,no -variant -option grp:shift_toggle,grp_led:scroll,terminate:ctrl_alt_bksp &
 
 (sleep 2 && spacefm -d) &
 (sleep 3 && nm-applet) &
 (sleep 3 && volumeicon) &
+(sleep 3 && /opt/plexmediaserver/start.sh)
